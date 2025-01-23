@@ -22,7 +22,7 @@ const blogSchema=new mongoose.Schema({
     default:0
   },
   comments:[{
-    userName:{type:String,required:true},
+    username:{type:String,required:true},
     content:{type:String,required:true},
     createdAt:{type:Date,default:Date.now()}
   }]
