@@ -13,6 +13,7 @@ const getBlogs = async (req, res, next) => {
 }
 
 const postBlog = async (req, res, next) => {
+  console.log(req.body);
   const { title, content, author } = req.body;
   try {
     const blog = new Blog({ title, content, author });
